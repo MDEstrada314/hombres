@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Descarga de Imagen</title>
   <style>
     * {
@@ -16,21 +17,25 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background-color: rgb(27, 27, 27);
+      padding: 20px;
       text-align: center;
     }
 
     h1 {
       color: white;
       margin-bottom: 20px;
+      font-size: 6vw;
+      max-width: 90%;
     }
 
     button {
       background-color: #28a745;
       color: white;
       padding: 15px 30px;
-      font-size: 18px;
+      font-size: 5vw;
+      max-width: 90%;
       border: none;
       border-radius: 10px;
       cursor: pointer;
@@ -42,9 +47,22 @@
     }
 
     img {
-      width: 10vw;
+      width: 80vw;
+      max-width: 300px;
       height: auto;
       border-radius: 10px;
+    }
+
+    /* Mejoras para pantallas grandes */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      button {
+        font-size: 20px;
+        width: auto;
+      }
     }
   </style>
 </head>
