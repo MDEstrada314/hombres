@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Descarga de Imagen</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(27, 27, 27);
+      text-align: center;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    img {
+      width: 10vw;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Haz clic para descargar la imagen de la reunión</h1>
+  <a href="wallpeper2.jpg" download>
+    <button>Descargar imagen</button>
+  </a>
+  <img src="wallpeper2.jpg" alt="Imagen de la reunión">
+</body>
+</html>
